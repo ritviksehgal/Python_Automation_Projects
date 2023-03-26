@@ -1,0 +1,2 @@
+# Introduction
+This collection of automation scripts will explore Python programming language and its many uses within the cyber security space including, code testing, automation, malware analysis, and network scanning, and general automation. Each folder will include a 'README.md' describing what each script does, its intended uses, as well as how it can be used to develop efficiency or simplify operations at the corporate level
