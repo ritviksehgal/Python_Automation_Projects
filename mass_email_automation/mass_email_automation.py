@@ -3,7 +3,7 @@ import pandas as pd
 
 # Read the data from the Excel file
 df = pd.read_excel('emails_names_laptopIDs.xlsx')
-file_loc = "C:/Users/ritvi/OneDrive/Desktop/py_scripts/mass_email_automation/emails_names_laptopIDs.xlsx"
+file_loc = "{file_path}"
 read = pd.read_excel(file_loc, index_col=0, header =0)
 
 user_email = input("Enter your email: ")
