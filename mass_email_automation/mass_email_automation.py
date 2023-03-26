@@ -3,11 +3,11 @@ import pandas as pd
 
 # Read the data from the Excel file
 df = pd.read_excel('emails_names_laptopIDs.xlsx')
-file_loc = "{file_path}"
+file_loc = "C:/Users/ritvi/OneDrive/Desktop/py_scripts/mass_email_automation/emails_names_laptopIDs.xlsx"
 read = pd.read_excel(file_loc, index_col=0, header =0)
 
 user_email = input("Enter your email: ")
-user_pass = input("Enter application- specific password: ") # information on app- specific password found at https://support.google.com/accounts/answer/185833?visit_id=638154494702794850-185197231
+user_pass = input("Enter your application- specific password: ")  # create an app- specific password at https://myaccount.google.com/apppasswords
 
 # Set up the SMTP server
 server = smtplib.SMTP('Smtp.gmail.com')
@@ -20,13 +20,15 @@ for i, row in df.iterrows():
     to_email = row['Email']
     name = row['Name']
     laptop_id = row['Laptop ID']
-
+    cc_email = input('Input the "CC" email here (optional):')
 
     # Compose the email message
-    message = "Dear {},\n\nYour laptop {} is ready for pickup. Please come to the IT Service Center to claim it.\n\nBest regards,\nService Desk- Global".format(name, laptop_id)
+    subject = 'Your Laptop is Ready for Pickup!'
+    message =f"Subject: {subject}\n\n Dear {name},\n\nYour laptop {laptop_id} is ready for pickup. Please come to the IT Service Center to claim it.\n\nBest regards,\nService Desk- Global".format(name, laptop_id)
+    
 
-from_email = input('Input the "From" email here')
+from_email = input('Input the "From" email here:')
     # Send the email
-server.sendmail(from_email, to_email, message)
+server.sendmail(from_email, [to_email, cc_email], message)
 
 server.quit()
