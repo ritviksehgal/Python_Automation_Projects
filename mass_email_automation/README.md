@@ -1,4 +1,4 @@
-The purpose of this script is to  automate the process of mass emailing while still personalizing each email.
+The purpose of this script is to automate the process of mass emailing while still personalizing each email.
 
 # Example Use Case
 
