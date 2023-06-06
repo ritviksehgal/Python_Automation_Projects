@@ -14,8 +14,8 @@ In the second step, this information is then sent to VirusTotal for malware anal
 
 The output is written to the file "vt_results.txt". The following are examples of output:
 
-1. process_name.exe - malicious
-2. process_name.exe - Not malicious
-3. "The secure score is not found" (if the MD5 hash digest is not found in the VirusTotal database)
+1. process hash digest - malicious
+2. process hash digest - Not malicious
+3. "The secure score is not found" (if the process hash digest is not found in VirusTotal)
 
 These results can be very can be very useful to teams responsible to detecting malware and defining IOCs (Indicators of Compromise) for activities such as threat hunting. Also, these security automation scripts can relieve network monitoring team of manual tasks, effectively saving time and labor hours.
