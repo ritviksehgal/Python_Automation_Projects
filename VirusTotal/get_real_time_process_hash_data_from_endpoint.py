@@ -3,9 +3,15 @@ import psutil
 import hashlib
 from datetime import datetime
 
+
+#upend file name with current date and time
+current_datetime = datetime.now()
+formatted_datetime = current_datetime.strftime("%Y-%m-%d")
+
 # Create a new Excel file
-filename = 'All_process_hash_real_time' + '.xlsx'
-#+ datetime.now().strftime('%Y-%m-%d-%H-%M-%S') 
+filename = f'All_process_hash_real_time{formatted_datetime}.xlsx'
+
+
 workbook = xlsxwriter.Workbook(filename)
 
 # Add a new worksheet to the file
