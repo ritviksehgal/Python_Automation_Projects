@@ -1,6 +1,6 @@
 # Python Project - VirusTotal
 
-In this project, I develop a security automation script for a very common task among Security Operations Analysts- using VirusTotal to detect malware.
+In this project, I develop a security automation script for a very common task among Security Operations Analysts- using VirusTotal for malware analysis.
 
 In today's ever- changing Threat landscape, endpoint security is becoming more commonplace within Cyber Security teams across industries. As a result, it is increasingly important to monitor endpoint devices in real- time to detect malicious/ suspicious processes and filter through network statistics of a local machine.
 
