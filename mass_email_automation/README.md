@@ -9,14 +9,13 @@ Suppose a group of 40 people is hired at a company and a team member from the IT
 This script takes 2 inputs.
 
 1. Email credentials supplied by user. (This is to authenticate to Gmail STMP servers. Credentials are not hard- coded for security purposes)
-  a. Note: This script uses public Gmail SMTP servers to send the automated emails. Minor changes would be required if private/ corporate email servers are in use. 
+   Note: This script uses public Gmail SMTP servers to send the automated emails. Minor changes would be required if private/ corporate email servers are in use. 
 2. file path of the employee names and laptop numbers assigned by the company.
 
 # Email Output Example
 
 From: (input supplied by user)
-To (employee email, read from excel sheet)
-CC: (user supplied)
+To: (employee email, read from excel sheet)
 
 Message:
 
